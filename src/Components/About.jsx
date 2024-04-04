@@ -1,11 +1,16 @@
-import React from "react";
+import React, { Fragment } from "react";
 import AboutBackground from "../Assets/about-background.png";
 import AboutBackgroundImage from "../Assets/about-background-image.png";
 import { BsFillPlayCircleFill } from "react-icons/bs";
-
+import Navbar from "./Navbar";
 const About = () => {
   return (
+   <Fragment>
+    <div className="home-container">
+      <Navbar />
+    </div>
     <div className="about-section-container">
+     
       <div className="about-background-image-container">
         <img src={AboutBackground} alt="" />
       </div>
@@ -33,6 +38,11 @@ const About = () => {
         </div>
       </div>
     </div>
+
+
+
+   </Fragment>
+   
   );
 };
 
