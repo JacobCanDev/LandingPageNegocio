@@ -23,7 +23,14 @@ function App() {
         element={<Contact />}
       />
 
+
+<Route
+        path='/Footer'
+        element={<Footer />}
+      />
     </Routes>
+
+    
     // <div className="App">
     //   <Home />
     //   <About />

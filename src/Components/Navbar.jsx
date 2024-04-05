@@ -51,7 +51,7 @@ const Navbar = () => {
         <a href="/About">About</a>
         <a href="/Testimonial">Testimonials</a>
         <a href="/Contact">Contact</a>
-        <a href="">
+        <a href="/Footer">
           <BsCart2 className="navbar-cart-icon" />
         </a>
         <button className="primary-button">Bookings Now</button>
