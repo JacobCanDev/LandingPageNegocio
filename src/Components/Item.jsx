@@ -1,6 +1,5 @@
 import { Paper, Button } from "@mui/material";
 import { configurations } from "../Configurations/enums";
-
 const Item = (props) => {
   return (
     <Paper>
@@ -17,7 +16,14 @@ const Item = (props) => {
 
       <Button
         variant="contained"
-        sx={{ borderRadius: 50, backgroundColor: configurations.companyColor }}
+        sx={{
+          borderRadius: 50,
+          backgroundColor: configurations.companyColor,
+          "&:hover": {
+            backgroundColor: "#ffd870",
+            color: "#3c52b2",
+          },
+        }}
         buttonStyle={{ borderRadius: "50" }}
         style={{
           margin: 0,
