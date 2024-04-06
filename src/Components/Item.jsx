@@ -7,13 +7,9 @@ const Item = (props) => {
         src={props.item.image}
         alt={props.item.name}
         style={{
-          width: "50%",
-          height: "45vh",
-
           display: "block",
           marginLeft: "auto",
           marginRight: "auto",
-          width: "50%",
         }}
       />
       <h2>{props.item.name}</h2>
