@@ -1,6 +1,6 @@
 import { Paper, Button } from "@mui/material";
-import { configurations } from "../Configurations/enums";
-const Item = (props) => {
+import { configurations } from "../../Configurations/enums";
+const ItemComponent = (props) => {
   return (
     <Paper>
       <img
@@ -10,6 +10,7 @@ const Item = (props) => {
           display: "block",
           marginLeft: "auto",
           marginRight: "auto",
+          aspectRatio: 135 / 76,
         }}
       />
       <h2 style={{ textAlign: "center", width: "100%" }}>{props.item.name}</h2>
@@ -40,4 +41,4 @@ const Item = (props) => {
   );
 };
 
-export default Item;
+export default ItemComponent;

@@ -1,11 +1,11 @@
 import React from "react";
 import Carousel from "react-material-ui-carousel";
-import Item from "../Item";
+import ItemComponent from "./ItemComponent";
 import { Grid, Typography } from "@mui/material";
-
 import { configurations } from "../../Configurations/enums";
 import { Fragment } from "react";
 const CarouselComponent = (props) => {
+  console.log(props);
   return (
     <Fragment>
       <Grid container>
@@ -20,7 +20,7 @@ const CarouselComponent = (props) => {
             }}
           >
             {props.products.map((item) => (
-              <Item key={item.id} item={item} />
+              <ItemComponent key={item.id} item={item} />
             ))}
           </Carousel>
         </Grid>
