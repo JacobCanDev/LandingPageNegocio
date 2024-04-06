@@ -16,6 +16,7 @@ import InfoIcon from "@mui/icons-material/Info";
 import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
+import Logo2 from "../Assets/logo2.svg";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -44,7 +45,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="nav-logo-container">
-        <img src={Logo} alt="" />
+        <img src={Logo2} alt="" />
       </div>
       <div className="navbar-links-container">
         <a href="/">Home</a>

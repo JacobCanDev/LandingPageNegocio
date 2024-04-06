@@ -8,24 +8,33 @@ import Item from "./Item";
 import Footer from "./Footer";
 import { Grid, Typography } from "@mui/material";
 import products from "../Helpers/Products/products.json";
+import { configurations } from "../Configurations/enums";
+import { Fragment } from "react";
 const Home = () => {
   return (
-    <Grid container>
-      <Grid item lg={12}>
-        <Navbar />
-      </Grid>
+    <Fragment>
+      <Grid container>
+        <Grid item xs={12}>
+          <Navbar />
+        </Grid>
 
-      <Grid item lg={12}>
-        <Carousel>
-          {products.map((item) => (
-            <Item key={item.id} item={item} />
-          ))}
-        </Carousel>
+        <Grid item xs={12}>
+          <Carousel
+            fullHeightHover={false}
+            navButtonsProps={{
+              style: {
+                backgroundColor: configurations.companyColor,
+                borderRadius: "50,50",
+              },
+            }}
+          >
+            {products.map((item) => (
+              <Item key={item.id} item={item} />
+            ))}
+          </Carousel>
+        </Grid>
       </Grid>
-      <Grid item lg={12}>
-        <Footer></Footer>
-      </Grid>
-    </Grid>
+    </Fragment>
   );
 };
 

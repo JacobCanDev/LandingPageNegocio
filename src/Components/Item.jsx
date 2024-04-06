@@ -1,4 +1,5 @@
 import { Paper, Button } from "@mui/material";
+import { configurations } from "../Configurations/enums";
 
 const Item = (props) => {
   return (
@@ -12,10 +13,23 @@ const Item = (props) => {
           marginRight: "auto",
         }}
       />
-      <h2>{props.item.name}</h2>
-      <p>{props.item.description}</p>
+      <h2 style={{ textAlign: "center", width: "100%" }}>{props.item.name}</h2>
 
-      <Button className="CheckButton">Check it out!</Button>
+      <Button
+        variant="contained"
+        sx={{ borderRadius: 50, backgroundColor: configurations.companyColor }}
+        buttonStyle={{ borderRadius: "50" }}
+        style={{
+          margin: 0,
+          position: "absolute",
+          top: "75%",
+          left: "75%",
+          msTransform: "translate(-50%, -50%)",
+          transform: "translate(-50%, -50%)",
+        }}
+      >
+        IR
+      </Button>
     </Paper>
   );
 };
