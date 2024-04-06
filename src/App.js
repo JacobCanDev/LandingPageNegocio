@@ -1,4 +1,5 @@
 import "./App.css";
+import "./Estilos/Contact.css";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Work from "./Components/Work";

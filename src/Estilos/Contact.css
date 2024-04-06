@@ -1,0 +1,40 @@
+.ContentContact{
+    padding: 6%;
+    text-align: center;
+} 
+
+.title-orange {
+    position: relative;
+    border-bottom: 1px solid #d5d5d5;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title-orange-hr{
+    margin: 0 auto -2px auto;
+    width: 160px;
+    border-top: 4px solid #ed9b0f;
+}
+
+.content-icon-contact{
+    padding: 3%;
+    text-align: center;
+}
+
+.Contact-title{
+    font-size: 45px !important;
+}
+
+.Contact-text{
+    font-size: 20px !important;
+}
+
+.Imagen-Contact{
+    display: inline-block;
+    width: 90%;
+}
+
+.icon-contact{
+    color: #ed9b0f !important;
+    font-size: 100px !important;
+}
