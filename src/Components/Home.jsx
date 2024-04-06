@@ -18,6 +18,26 @@ const Home = () => {
         </Grid>
 
         <Grid item xs={12}>
+          <div className="home-container">
+            <div className="home-banner-container">
+              <div className="home-bannerImage-container">
+                <img src={BannerBackground} alt="" />
+              </div>
+              <div className="home-text-section">
+                <h1 className="primary-heading">Home page</h1>
+                <p className="primary-text">
+                  Healthy switcher chefs do all the prep work, like peeding,
+                  chopping & marinating, so you can cook a fresh food.
+                </p>
+              </div>
+              <div className="home-image-section">
+                <img src={BannerImage} alt="" />
+              </div>
+            </div>
+          </div>
+        </Grid>
+
+        <Grid item xs={12}>
           <CarouselComponent products={products} />
         </Grid>
       </Grid>
