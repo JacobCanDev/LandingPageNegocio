@@ -20,13 +20,20 @@ const Footer = (props) => {
   return (
     <Fragment>
       <Grid item xs={12} style={{display:"flex"}}>
-            <div className="footer-icons">
+        <Grid xs={2}>
+
+          <img src={Logo2} alt="" />
+        </Grid>
+        <Grid xs={2} style={{}}>
               <BsTwitter />
               <SiLinkedin />
               <BsYoutube />
               <FaFacebookF />
-            </div>
-            <Grid xs={6}>
+          
+        </Grid>
+        
+          
+            <Grid xs={4}>
               <Link
                 to={routes.HomeRoute}
                 component="button"
@@ -84,7 +91,7 @@ const Footer = (props) => {
               </Link>
             </Grid>
 
-            <Grid xs={12}>
+            <Grid xs={4}>
                       <Grid>
                     <LocalPhoneIcon> </LocalPhoneIcon> <Typography variant="caption">{companyData.PhoneNumber}</Typography>
                     </Grid>
