@@ -14,23 +14,23 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import {
   navbarSectionsNames,
   routes,
-  companyData,
+  companyData,configurations
 } from "../Configurations/enums";
 const Footer = (props) => {
   return (
     <Fragment>
-      <Grid item xs={12} style={{display:"flex"}}>
-        <Grid xs={2}>
-
+      <Grid item xs={12} className="footer-wrapper">
+        <Grid xs={4} className="footer-section-one" >
           <img src={Logo2} alt="" />
-        </Grid>
-        <Grid xs={2} style={{}}>
+           <Grid className="footer-icons" >
               <BsTwitter />
               <SiLinkedin />
               <BsYoutube />
               <FaFacebookF />
-          
+
+           </Grid>
         </Grid>
+      
         
           
             <Grid xs={4}>
@@ -107,8 +107,8 @@ const Footer = (props) => {
             
       
       </Grid>
-  <Grid item xs={12}>
-        <Typography variant="caption" color="black">
+  <Grid item xs={12}   sx={{ alignContent: "center",textAlign:"center",backgroundColor:configurations.companyColor }} >
+        <Typography  variant="caption" color="white" >
           &copy; {new Date().getFullYear()} {companyData.Name}
         </Typography>
       </Grid>
