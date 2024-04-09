@@ -8,6 +8,9 @@ import { Copyright } from "@mui/icons-material";
 import { Typography, Grid } from "@mui/material";
 import { Fragment } from "react";
 import { Link } from "react-router-dom";
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import MarkunreadIcon from '@mui/icons-material/Markunread';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import {
   navbarSectionsNames,
   routes,
@@ -16,21 +19,14 @@ import {
 const Footer = (props) => {
   return (
     <Fragment>
-      <Grid item xs={12}>
-        <div className="footer-wrapper">
-          <div className="footer-section-one">
-            <div className="footer-logo-container">
-              <img src={Logo2} alt="" />
-            </div>
+      <Grid item xs={12} style={{display:"flex"}}>
             <div className="footer-icons">
               <BsTwitter />
               <SiLinkedin />
               <BsYoutube />
               <FaFacebookF />
             </div>
-          </div>
-          <div className="footer-section-two">
-            <Grid xs={12}>
+            <Grid xs={6}>
               <Link
                 to={routes.HomeRoute}
                 component="button"
@@ -89,19 +85,27 @@ const Footer = (props) => {
             </Grid>
 
             <Grid xs={12}>
-              <Typography>{companyData.PhoneNumber}</Typography>
-              <Typography>{companyData.Email}</Typography>
-              <Typography>{companyData.Address}</Typography>
+                      <Grid>
+                    <LocalPhoneIcon> </LocalPhoneIcon> <Typography variant="caption">{companyData.PhoneNumber}</Typography>
+                    </Grid>
+                    <Grid>
+                      <MarkunreadIcon ></MarkunreadIcon>
+                    <Typography variant="caption">{companyData.Email}</Typography>
+                    </Grid>
+                    <Grid>
+                      <LocationOnIcon ></LocationOnIcon>
+                      <Typography variant="caption">{companyData.Address}</Typography>
+                    </Grid>
             </Grid>
-          </div>
-        </div>
+            
+      
       </Grid>
-
-      <Grid item xs={12}>
+  <Grid item xs={12}>
         <Typography variant="caption" color="black">
           &copy; {new Date().getFullYear()} {companyData.Name}
         </Typography>
       </Grid>
+    
     </Fragment>
   );
 };

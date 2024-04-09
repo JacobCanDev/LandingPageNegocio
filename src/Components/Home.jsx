@@ -2,6 +2,7 @@ import React from "react";
 import BannerBackground from "../Assets/home-banner-background.png";
 import BannerImage from "../Assets/home-banner-image.png";
 import Navbar from "./Navbar";
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ItemComponent from "./Utils/ItemComponent";
 import Footer from "./Footer";
 import { Grid, Typography } from "@mui/material";
