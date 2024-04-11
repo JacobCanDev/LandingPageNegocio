@@ -27,7 +27,7 @@ const Home = () => {
         <Grid item xs={12}>
           <Navbar />
         </Grid>
-        <Grid container spacing={2} alignItems="center" justifyContent="center">
+        <Grid container alignItems="center" justifyContent="center">
           <Grid item xs={8}>
             {" "}
             <div className="home-text-section">
