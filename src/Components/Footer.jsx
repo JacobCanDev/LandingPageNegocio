@@ -20,13 +20,7 @@ import {
 const Footer = (props) => {
   return (
     <Fragment>
-      <Grid
-        container
-        spacing={2}
-        xs={12}
-        alignItems="center"
-        justifyContent="center"
-      >
+      <Grid container xs={12} alignItems="center" justifyContent="center">
         <Grid md={2}>
           <img src={Logo2} alt="" />
           <Grid>
