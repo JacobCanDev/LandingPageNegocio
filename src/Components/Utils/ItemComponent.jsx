@@ -17,7 +17,7 @@ const ItemComponent = (props) => {
       />
       <h2 style={{ textAlign: "center", width: "100%" }}>{props.item.name}</h2>
 
-      <Button
+      {/* <Button
         variant="contained"
         sx={{
           borderRadius: 50,
@@ -38,7 +38,7 @@ const ItemComponent = (props) => {
         }}
       >
         IR
-      </Button>
+      </Button> */}
     </Paper>
   );
 };

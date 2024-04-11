@@ -2,7 +2,7 @@ import React from "react";
 import BannerBackground from "../Assets/home-banner-background.png";
 import BannerImage from "../Assets/home-banner-image.png";
 import Navbar from "./Navbar";
-import LocationOnIcon from '@mui/icons-material/LocationOn';
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 import ItemComponent from "./Utils/ItemComponent";
 import Footer from "./Footer";
 import { Grid, Typography } from "@mui/material";
@@ -27,8 +27,7 @@ const Home = () => {
         <Grid item xs={12}>
           <Navbar />
         </Grid>
-        <Grid container spacing={2}>
-          <Grid item xs={2}></Grid>
+        <Grid container spacing={2} alignItems="center" justifyContent="center">
           <Grid item xs={8}>
             {" "}
             <div className="home-text-section">
@@ -42,18 +41,11 @@ const Home = () => {
               </p>
             </div>
           </Grid>
-          <Grid item xs={2}></Grid>
         </Grid>
         <Grid item xs={12}>
           <CarouselComponent products={products} />
         </Grid>
-        <Grid container spacing={2}>
-          <Grid item xs={2}></Grid>
-          <Grid item xs={8}>
-            <Footer />
-          </Grid>
-          <Grid item xs={2}></Grid>
-        </Grid>
+        <Footer />
       </Grid>
     </Fragment>
   );

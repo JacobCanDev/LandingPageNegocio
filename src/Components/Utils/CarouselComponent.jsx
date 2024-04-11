@@ -1,7 +1,6 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
 import ItemComponent from "./ItemComponent";
 import { Grid, Typography } from "@mui/material";
 import { configurations } from "../../Configurations/enums";
@@ -11,20 +10,23 @@ const CarouselComponent = (props) => {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 4,
+      items: 2,
       slidesToSlide: 1,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 4,
+      items: 2,
+      slidesToSlide: 1,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 3,
+      items: 1,
+      slidesToSlide: 1,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
       items: 1,
+      slidesToSlide: 1,
     },
   };
 
@@ -33,8 +35,8 @@ const CarouselComponent = (props) => {
       <Grid container>
         <Grid item xs={12}>
           <Carousel
+            centerMode={true}
             keyBoardControl={true}
-            autoPlaySpeed={1000}
             responsive={responsive}
           >
             {props.products.map((item) => (
