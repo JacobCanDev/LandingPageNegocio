@@ -38,7 +38,6 @@ const Footer = (props) => {
             </Typography>
           </Grid>
           <Grid>
-            {/* <LocationOnIcon></LocationOnIcon> */}
             <Typography variant="h7" align="center">
               {companyData.Address}
             </Typography>
@@ -46,7 +45,6 @@ const Footer = (props) => {
         </Grid>
         <Grid md={3}>
           <Grid>
-            {/* <LocalPhoneIcon> </LocalPhoneIcon> */}
             <Typography variant="h7" align="center">
               {companyData.PhoneNumber}
             </Typography>
