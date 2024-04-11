@@ -10,5 +10,23 @@
     "image": "https://img.uline.com/is/image/uline/S-10512W?$MediumRHD$",
     "name": "Casco ordinario",
     "description": "De uso normal"
+  },
+  {
+    "id": "3",
+    "image": "https://img.uline.com/is/image/uline/HD_157?$MediumRHD$",
+    "name": "Bolsa ordinaria",
+    "description": "De uso normal"
+  },
+  {
+    "id": "4",
+    "image": "https://img.uline.com/is/image/uline/HD_3089_SR?$SearchRHD$",
+    "name": "Cinta adhesiva",
+    "description": "De uso normal"
+  },
+  {
+    "id": "5",
+    "image": "https://img.uline.com/is/image/uline/HD_3059_SR?$SearchRHD$",
+    "name": "Cinta adhesiva industrial",
+    "description": "De uso normal"
   }
 ]

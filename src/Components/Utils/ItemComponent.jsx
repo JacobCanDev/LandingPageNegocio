@@ -12,6 +12,8 @@ const ItemComponent = (props) => {
           marginRight: "auto",
           aspectRatio: 135 / 76,
         }}
+        width={500}
+        height={500}
       />
       <h2 style={{ textAlign: "center", width: "100%" }}>{props.item.name}</h2>
 
