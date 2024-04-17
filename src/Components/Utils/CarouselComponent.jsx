@@ -37,7 +37,9 @@ const CarouselComponent = (props) => {
           <Carousel
             centerMode={true}
             keyBoardControl={true}
+            autoPlay={true}
             responsive={responsive}
+            infinite={true}
           >
             {props.products.map((item) => (
               <ItemComponent key={item.id} item={item} />

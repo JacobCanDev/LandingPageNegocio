@@ -1,45 +1,50 @@
 import { Paper, Button } from "@mui/material";
 import { configurations } from "../../Configurations/enums";
+import Box from "@mui/material/Box";
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
+
 const ItemComponent = (props) => {
   return (
-    <Paper>
-      <img
-        src={props.item.image}
-        alt={props.item.name}
-        style={{
-          display: "block",
-          marginLeft: "auto",
-          marginRight: "auto",
-          aspectRatio: 135 / 76,
-        }}
-        width={500}
-        height={500}
-      />
-      <h2 style={{ textAlign: "center", width: "100%" }}>{props.item.name}</h2>
-
-      {/* <Button
-        variant="contained"
-        sx={{
-          borderRadius: 50,
-          backgroundColor: configurations.companyColor,
-          "&:hover": {
-            backgroundColor: "#ffd870",
-            color: "#3c52b2",
-          },
-        }}
-        buttonStyle={{ borderRadius: "50" }}
-        style={{
-          margin: 0,
-          position: "absolute",
-          top: "75%",
-          left: "75%",
-          msTransform: "translate(-50%, -50%)",
-          transform: "translate(-50%, -50%)",
-        }}
-      >
-        IR
-      </Button> */}
-    </Paper>
+    <Card
+      sx={{
+        boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2) !important",
+        maxWidth: "320px",
+        margin: "auto 1rem",
+        textAlign: "center",
+        fontFamily: "arial",
+      }}
+    >
+      <CardContent>
+        <img
+          style={{ width: "100%", height: "16em", objectFit: "cover" }}
+          src={props.item.image}
+        />
+        <h2>{props.item.name}</h2>
+        <p>{props.item.description}</p>
+      </CardContent>
+      <CardActions>
+        <Button
+          sx={{
+            border: "none",
+            outline: 0,
+            padding: "12px",
+            textAlign: "center",
+            cursor: "pointer",
+            width: "100%",
+            fontSize: "18px",
+            ":hover": "opacity: 0.7",
+            color: "white !important",
+            backgroundColor: configurations.companyColor + " !important",
+          }}
+          size="small"
+        >
+          IR
+        </Button>
+      </CardActions>
+    </Card>
   );
 };
 
