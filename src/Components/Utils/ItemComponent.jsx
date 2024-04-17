@@ -19,7 +19,7 @@ const ItemComponent = (props) => {
     >
       <CardContent>
         <img
-          style={{ width: "100%", height: "16em", objectFit: "cover" }}
+          style={{ width: "100%", height: "16em", objectFit: "scale-down" }}
           src={props.item.image}
         />
         <h2>{props.item.name}</h2>

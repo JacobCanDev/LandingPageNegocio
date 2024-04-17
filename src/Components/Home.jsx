@@ -31,13 +31,13 @@ const Home = () => {
           <Grid item xs={8}>
             {" "}
             <div className="home-text-section">
-              <h1 className="primary-heading">Bienvenidos</h1>
+              <h1 className="primary-heading">¡Bienvenidos!</h1>
               <p className="primary-text">
                 En comercializadora REEM, te damos la más cordial bienvenida a
                 nuestro sitio web, en el cual podrás saber más acerca de
                 nuestros servicios y productos que ofrecemos, estamos felices de
                 tenerte aquí, para nosotros es muy importante tu opinión,
-                mediante este espacio, puedes contactarnos.
+                contáctanos.
               </p>
             </div>
           </Grid>
