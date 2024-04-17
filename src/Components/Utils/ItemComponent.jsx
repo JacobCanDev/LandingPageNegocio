@@ -35,7 +35,9 @@ const ItemComponent = (props) => {
             cursor: "pointer",
             width: "100%",
             fontSize: "18px",
-            ":hover": "opacity: 0.7",
+            "&:hover": {
+              opacity: "0.7 !important",
+            },
             color: "white !important",
             backgroundColor: configurations.companyColor + " !important",
           }}
