@@ -5,18 +5,19 @@ import ItemComponent from "./ItemComponent";
 import { Grid, Typography } from "@mui/material";
 import { configurations } from "../../Configurations/enums";
 import { Fragment } from "react";
+import CustomButtonGroupCarousel from "./CustomButtonGroupCarousel";
 const CarouselComponent = (props) => {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 2,
-      slidesToSlide: 1,
+      items: 4,
+      slidesToSlide: 3,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 2,
-      slidesToSlide: 1,
+      items: 4,
+      slidesToSlide: 3,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -35,6 +36,9 @@ const CarouselComponent = (props) => {
       <Grid container>
         <Grid item xs={12}>
           <Carousel
+            arrows={false}
+            renderButtonGroupOutside={true}
+            customButtonGroup={<CustomButtonGroupCarousel />}
             centerMode={true}
             keyBoardControl={true}
             autoPlay={true}
