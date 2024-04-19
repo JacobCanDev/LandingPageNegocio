@@ -13,6 +13,7 @@ import CarouselComponent from "./Utils/CarouselComponent";
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
+import BackGroundLandingPage from "../Assets/BackgroundLandingPage.png";
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
   ...theme.typography.body2,
@@ -20,6 +21,7 @@ const Item = styled(Paper)(({ theme }) => ({
   textAlign: "center",
   color: theme.palette.text.secondary,
 }));
+
 const Home = () => {
   return (
     <Fragment>
