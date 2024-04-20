@@ -7,12 +7,12 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
 const Contact = () => {
   const textTittle = "Consultoría gratuita, ¡Tu primer paso hacia el éxito!";
-
+  const textContact = "Nuestro equipo de expertos estará encantado de brindarte asesoramiento personalizado y responder a todas tus preguntas."
   return (
     <Grid container>
       <Grid item xs={12} className="ContentContact">
         <Typography className="Contact-title">{textTittle}</Typography>
-        <Typography className="Contact-text">Nuestro equipo de expertos estará encantado de brindarte asesoramiento personalizado y responder a todas tus preguntas.</Typography>
+        <Typography className="Contact-text">{textContact}</Typography>
       </Grid>
       <Grid item xs={12} className="title-orange">
 					<h2>Contacto</h2>
