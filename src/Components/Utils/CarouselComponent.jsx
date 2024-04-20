@@ -1,23 +1,49 @@
 import React from "react";
-import Carousel from "react-material-ui-carousel";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import ItemComponent from "./ItemComponent";
 import { Grid, Typography } from "@mui/material";
 import { configurations } from "../../Configurations/enums";
 import { Fragment } from "react";
+import CustomButtonGroupCarousel from "./CustomButtonGroupCarousel";
 const CarouselComponent = (props) => {
-  console.log(props);
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 4,
+      slidesToSlide: 3,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 4,
+      slidesToSlide: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
+      slidesToSlide: 1,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1,
+    },
+  };
+
   return (
     <Fragment>
       <Grid container>
         <Grid item xs={12}>
           <Carousel
-            fullHeightHover={false}
-            navButtonsProps={{
-              style: {
-                backgroundColor: configurations.companyColor,
-                borderRadius: "50,50",
-              },
-            }}
+            arrows={false}
+            renderButtonGroupOutside={true}
+            customButtonGroup={<CustomButtonGroupCarousel />}
+            centerMode={true}
+            keyBoardControl={true}
+            autoPlay={true}
+            responsive={responsive}
+            infinite={true}
           >
             {props.products.map((item) => (
               <ItemComponent key={item.id} item={item} />

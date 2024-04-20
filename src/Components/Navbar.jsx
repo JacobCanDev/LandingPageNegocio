@@ -17,7 +17,7 @@ import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import Logo2 from "../Assets/logo2.svg";
-import { navbarSectionsNames } from "../Configurations/enums";
+import { navbarSectionsNames, routes } from "../Configurations/enums";
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const menuOptions = [
@@ -49,11 +49,13 @@ const Navbar = () => {
         <img src={Logo2} alt="" />
       </div>
       <div className="navbar-links-container">
-        <a href="/">{navbarSectionsNames.HomeLabel}</a>
-        <a href="/About">{navbarSectionsNames.AboutLabel}</a>
-        <a href="/Testimonial">{navbarSectionsNames.OursProductsLabel}</a>
-        <a href="/Testimonial">{navbarSectionsNames.OursClients}</a>
-        <a href="/Contact">{navbarSectionsNames.ContactUsLabel}</a>
+        <a href={routes.HomeRoute}>{navbarSectionsNames.HomeLabel}</a>
+        <a href={routes.AboutRoute}>{navbarSectionsNames.AboutLabel}</a>
+        <a href={routes.ProductsRoute}>
+          {navbarSectionsNames.OursProductsLabel}
+        </a>
+        <a href={routes.ClientsRoute}>{navbarSectionsNames.OursClients}</a>
+        <a href={routes.ContactRoute}>{navbarSectionsNames.ContactUsLabel}</a>
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
