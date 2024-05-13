@@ -44,6 +44,7 @@ const Footer = (props) => {
           </Grid>
         </Grid>
         <Grid md={3}>
+          -
           <Grid>
             <Typography variant="h7" align="center">
               {companyData.PhoneNumber}
